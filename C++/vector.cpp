@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
+
+//push_back add element at last index
+// pop_back remove element at last index
 
 void printVec(vector<int> v)
 {
