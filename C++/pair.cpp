@@ -7,7 +7,10 @@ int main()
     a = make_pair(11, "Prerit");
     cout << a.first << " " << a.second <<endl;
     a = {011, "Prerit Kumar Jain"};
-    cout << a.first << " " << a.second;
+    cout << a.first << " " << a.second <<endl;
+    pair<int,string> a1;
+    cin>> a1.first>> a1.second;
+    cout << a1.first <<" "<<a1.second<<endl;
 
     // array elements swapping
     int c[]={1,2,3};
