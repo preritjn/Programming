@@ -18,6 +18,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> x;
+        printVec(v);
         v.push_back(x);
     }
     printVec(v);
