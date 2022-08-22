@@ -3,8 +3,7 @@ using namespace std;
 
 int main() {
 	int a,b,i;
-	cin>>a;
-    cin>>b;
+	cin>>a>>b;
 	
 	if(a<b)
 	{
