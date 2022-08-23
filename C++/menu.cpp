@@ -32,22 +32,25 @@ int main()
         break;
 
     case 3:
+        c = 0;
         cout << "Enter a number : ";
         cin >> n;
-        for(i=3;i<=n;i++)
-        if(n%i==0)
+        for (i = 3; i < n; i += 2)
         {
-            cout<<"Divisible by an odd number";
-            break;
+            if (n % i == 0)
+            {
+                c++;
+            }
         }
+        if (c == 0)
+            cout << "Not divisible by any odd number";
         else
-        {
-        cout<<"Not divisible by any odd number";
-        break;
-        }
+            cout << "Divisible by odd number";
+
         break;
     default:
         cout << "You entered a wrong input";
         break;
     }
+    return 0;
 }
