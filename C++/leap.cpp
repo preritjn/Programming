@@ -14,4 +14,5 @@ int main()
     for (int i = n; i <= 2020; i++)
         if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
             cout << i << endl;
+    return 0;
 }
