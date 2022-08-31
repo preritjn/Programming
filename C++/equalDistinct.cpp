@@ -10,32 +10,10 @@ int main() {
 	    int arr[n];
 	    for(j=0;j<n;j++)
 	    cin>>arr[j];
-	    for(j=0;j<n;j++)
-	    {
-	        for(k=0;k<n;k++)
-	        {
-	            if(arr[k]==arr[j])
-	            c++;
-	        }
-	        if(c%2==0 && c!=0)
-	        {
-	            cout<<"YES\n";
-	            break;
-	        }
-	        else
-	        c1++;
-	        c=0;
-	        if(c1==n  && n%2==0)
-	        {
-	            cout<<"YES\n";
-	            c1=0;
-	        }
-	        else if(c1==n && n%2!=0)
-	        {
-	            cout<<"NO\n";
-	            c1=0;
-	        }
-	    }
+	    if(n%2!=0)
+		cout<<"NO\n";
+		else
+		cout<<"YES\n";
 	}
 	return 0;
 }
