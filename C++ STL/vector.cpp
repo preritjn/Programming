@@ -35,7 +35,6 @@ int main()
     printVec(v);
     v2.push_back(42);
     printVec(v2);
-    printVec(v2);
-    
+    printVec(v2);    
     return 0;   
 }
