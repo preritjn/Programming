@@ -7,7 +7,7 @@ void iterpair()
     vector<pair<int, int>> v;
     v = {make_pair(1, 2), {2, 3}, {3, 4}, {4, 5}};
     vector<pair<int, int>>::iterator it;
-    for (it = v.begin(); it != v.end(); it++)
+    for (it = v.begin(); it < v.end(); it++)
         cout << (*it).first << " " << (*it).second << endl;
     for (it = v.begin(); it != v.end(); it++)
         cout << it->first << " " << it->second << endl;
