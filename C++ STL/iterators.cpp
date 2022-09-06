@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void iterpair()
+void iterPair()
 {
     vector<pair<int, int>> v;
     v = {make_pair(1, 2), {2, 3}, {3, 4}, {4, 5}};
@@ -26,6 +26,6 @@ int main()
     vector<int>::iterator it = v.begin();
     cout << *it << endl;
     cout << *(it + 1)<<endl;
-    iterpair();
+    iterPair();
     return 0;
 }
