@@ -15,10 +15,10 @@ int main()
     m[1]="hello";  // time complexity of 0(log(n))
     m[5]="bitches";
     m[3]="there";
-    m[4]="my";
+    m.insert({4,"my"});
     // m[6]; time complexity of 0(log(n))
     print(m);
-    auto it =m.find(5);   //find returns an iterator
+    auto it =m.find(5);   //find returns an iterator & time complexity of 0(log(n))
     if(it==m.end())
     cout<<"No value\n";
     else
