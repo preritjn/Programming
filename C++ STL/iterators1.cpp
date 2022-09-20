@@ -22,5 +22,10 @@ int main()
     {
         cout << val.first << " " << val.second << endl;
     }
+
+    for (auto &val : vp)
+    {
+        cout << val.first << " " << val.second << endl;
+    }
     return 0;
 }
