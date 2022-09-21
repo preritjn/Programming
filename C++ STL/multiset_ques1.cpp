@@ -9,6 +9,24 @@ Help Monk prepare the same!*/
 using namespace std;
 
 int main() {
-
+    int n;
+    cin>>n;
+    map<int,multiset<string>> m;
+    while(n--) {
+        int x;
+        string name;
+        cin>>name>>x;
+        m[x].insert(name);
+    }
+    auto it=--m.end();
+    while(1) {
+        auto &sName= it->second;
+        auto &marks= it->first;
+        for(auto &val : sName)
+            cout<<val<<" "<<marks<<endl;
+        if(it==m.begin())
+            break;
+        it--;
+    }
     return 0;
 }
