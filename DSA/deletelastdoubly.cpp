@@ -39,20 +39,19 @@ Node *insertEnd(Node *head,int n) {
     return head;
 }
 
-Node *delHead(Node *head) {
+Node *delLast(Node *head) {
     if(head == NULL)
         return NULL;
     if(head->next == NULL) {
         delete head;
-        return NULL;
+        return NULL;        
     }
-    else {
-        Node *temp = head;
-        head = head->next;
-        head->prev = NULL;
-        delete temp;
-        return head;
-    }
+    Node *curr = head;
+    while(curr->next != NULL)
+        curr = curr->next;
+    curr->prev->next = NULL;
+    delete curr;
+    return head;
 }
 
 int main() {
@@ -69,7 +68,7 @@ int main() {
     head = insertEnd(head,90);
     head = insertEnd(head,100);
     printList(head);
-    head = delHead(head);
+    head = delLast(head);
     printList(head);
     return 0;
 }
