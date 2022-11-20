@@ -16,7 +16,7 @@ void printTree(Node *root) {
         return;
     queue<Node*> q;
     q.push(root);
-    while(q.empty() == false) {
+    while(!q.empty()) {
         int count = q.size();
         for(int i = 0;i<count;i++) {
             Node *curr = q.front();
