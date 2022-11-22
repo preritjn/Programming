@@ -19,7 +19,7 @@ int maxWidth(Node *root) {
     while(!q.empty()) {
         int count = q.size();
         res = max(res,count);
-        for(int i =0;i<q.size();i++) {
+        for(int i =0;i<count;i++) {
             Node *curr = q.front();
             q.pop();
             if(curr->left !=NULL)
