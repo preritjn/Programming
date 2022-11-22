@@ -17,7 +17,7 @@ struct Node {
 //         return false;
 //     else if(root->data == x)
 //         return true;
-//     else if(root->data > x)
+//     else if(root->data < x)
 //         return search(root->right,x);
 //     else
 //         return search(root->left,x);
