@@ -32,8 +32,6 @@ int burnTime(Node *root,int leaf,int &dist) {
     return max(lh,rh)+1;
 }
 
-
-
 int main() {
     Node *root1 = new Node(10);
     Node *root2 = new Node(20);
