@@ -15,7 +15,7 @@ int parent(int i) {
     return (i-1)/2;
 }
 
-void minHeapify(int i,int size) {
+void minHeapify(int i,int &size) {
     int lt = left(i),rt = right(i),smallest = i;
     if(lt < size && v[lt]<v[smallest])
         smallest = lt;
@@ -27,6 +27,19 @@ void minHeapify(int i,int size) {
     }
 }
 
+int extractMin(int &size) {
+    if(size == 0) 
+        return INT_MAX;
+    if(size == 1) {
+        size--;
+        return v[0];
+    }
+    swap(v[0],v[size-1]);
+    size--;
+    minHeapify(0,size);
+    return v[size];
+}
+
 int main() {
     int size,capacity;
     cout<<"Enter size and capacity : ";
@@ -36,7 +49,9 @@ int main() {
         cin>>x;
         v.push_back(x);
     }
+    int min = extractMin(size);
     minHeapify(0,size);
+    cout<<"Min : "<<min<<endl;
     for(int i=0;i<size;i++)
         cout<<v[i]<<" ";
     return 0;
