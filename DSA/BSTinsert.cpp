@@ -20,11 +20,11 @@ Node *insert(Node *root,int x) {
     return root;
 }
 
-void printList(Node *root) {
+void inOrder(Node *root) {
     if(root != NULL) {
-        printList(root->left);
+        inOrder(root->left);
         cout<<root->data<<" ";
-        printList(root->right);
+        inOrder(root->right);
     }
 }
 
@@ -41,6 +41,6 @@ int main() {
     int n;
     cin>>n;
     Node *root = insert(root1,n);
-    printList(root);
+    inOrder(root);
     return 0;
 }
