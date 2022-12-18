@@ -15,15 +15,15 @@ int parent(int i) {
     return (i-1)/2;
 }
 
-void insert(int x,int &size,int &capacity) {
-    if(size >= capacity)
-        return;
-    size++;
-    v.push_back(x);
-    int i = size-1;
-    while(i != 0 && v[parent(i)]>v[i]) {
-        swap(v[parent(i)],v[i]);
-        i = parent(i);
+void minHeapify(int i,int size) {
+    int lt = left(i),rt = right(i),smallest = i;
+    if(lt < size && v[lt]<v[smallest])
+        smallest = lt;
+    if(rt < size && v[rt]<v[smallest])
+        smallest = rt;
+    if(smallest != i) {
+        swap(v[smallest],v[i]);
+        minHeapify(smallest,size);
     }
 }
 
@@ -36,7 +36,7 @@ int main() {
         cin>>x;
         v.push_back(x);
     }
-    insert(12,size,capacity);
+    minHeapify(0,size);
     for(int i=0;i<size;i++)
         cout<<v[i]<<" ";
     return 0;
