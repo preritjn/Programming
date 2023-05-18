@@ -10,7 +10,7 @@ Hello World
 Hello World
 Hello World''')  # to print multiline statements
 
-from playsound import playsound
+import playsound
 playsound('D:\\Programming\\Python\\Pasoori - Shae Gill.mp3')
 
 print(os.listdir())
