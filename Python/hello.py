@@ -11,6 +11,7 @@ Hello World
 Hello World''')  # to print multiline statements
 
 import playsound
+
 playsound('D:\\Programming\\Python\\Pasoori - Shae Gill.mp3')
 
 print(os.listdir())
@@ -41,18 +42,18 @@ print(type(e))
 # logical operator
 bool1 = True
 bool2 = False
-print("The value of bool1 and bool2 is ",(bool1 and bool2))
-print("The value of bool1 or bool2 is ",(bool1 or bool2))
-print("The value of not bool2 is ",(not bool2)) 
+print("The value of bool1 and bool2 is ", (bool1 and bool2))
+print("The value of bool1 or bool2 is ", (bool1 or bool2))
+print("The value of not bool2 is ", (not bool2))
 
-a="505"
-a=int(a)
+a = "505"
+a = int(a)
 print(type(a))
-print(a+5)
+print(a + 5)
 
-c2=str(31)
+c2 = str(31)
 print(type(c2))
 
-name=input("Enter your name : ")
+name = input("Enter your name : ")
 print(name)
 print(type(name))
