@@ -1,6 +1,3 @@
-'''multiline comments'''
-# single line comment
-
 import os
 
 print("Hello World")
@@ -9,10 +6,6 @@ Hello World
 Hello World            
 Hello World
 Hello World''')  # to print multiline statements
-
-import playsound
-
-playsound('D:\\Programming\\Python\\Pasoori - Shae Gill.mp3')
 
 print(os.listdir())
 a1 = "Prerit"
