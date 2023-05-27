@@ -35,5 +35,5 @@ update_dictionary = {
 dictionary.update(update_dictionary)
 print(dictionary)
 
-print(dictionary.get("Preri"))
+print(dictionary.get("Preri", "Not Found"))
 print(dictionary["Prer"])
