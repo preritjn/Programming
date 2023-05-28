@@ -1,0 +1,7 @@
+Hello Prerit, Welcome to Python world
+Hello Shruti, Welcome to Python world
+Hello Amisha, Welcome to Python world
+Hello Prerit, Welcome to Python world
+Hello Asutosh, Welcome to Python world
+Hello Simu, Welcome to Python world
+Hello Mahak, Welcome to Python world
