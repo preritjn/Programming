@@ -1,13 +1,13 @@
 # import my_module
 # import my_module as mm
 # from my_module import find_index  # only gives access to find_index function
-import sys
-
-from my_module import find_index, test
-import test
-import random
 import os
+import random
+import sys
+import test
 from datetime import datetime
+
+from my_module import find_index
 
 courses = ['Maths', 'Physics', 'Chemistry', 'CompSci']
 

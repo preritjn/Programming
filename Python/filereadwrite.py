@@ -21,7 +21,7 @@ with open('test.txt', 'r') as f:
     size = 100
     f_context = f.read(size)
     while len(f_context) > 0:
-        print(f.tell())
+        print(f.tell())  # says the index of the last char
         print(f_context, end='')
         f_context = f.read(size)
 
