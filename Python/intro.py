@@ -16,6 +16,8 @@ index = find_index(courses, 'CompSci')
 print(index)
 print(test)
 print(sys.path)
+print(sys.version)
+print(sys.executable)
 
 random_course = random.choice(courses)
 print(random_course)
