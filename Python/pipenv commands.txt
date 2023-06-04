@@ -1,0 +1,17 @@
+pipenv install - create a virtual env
+pipenv install requests - create a virtual and install request package
+pipenv shell - Activate the environment
+exit - deactivate the environment
+pipenv run - to run command in environment without activating environment
+pipenv install -r requirements.txt(correct path) - to install the required dependencies
+pipenv lock -r - dependencies to add in requirement files
+pipenv install (package) --dev - package might not need in production but needed in dev env
+pipenv uninstall (pacakge) - remove any package that is installed
+pipenv --python (version) - to recreate env for different version of python
+pipenv --rm - to delete the existing environment
+pipenv --venv - path to your virtual environment
+pipenv check - to check known security vulnerabilities for packages that are installed
+pipenv graph - display a dependency graph showing your packages and the dependencies
+pipenv lock - create and update the pipfile.lock
+pipenv install --ignore-pipfile - to install from pipfile.lock and ignoring the pip file
+
