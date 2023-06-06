@@ -1,8 +1,8 @@
 import requests
 
 payload = {
-    'page':2,
-    'count':25
+    'page': 2,
+    'count': 25
 }
 
 data = {
@@ -14,7 +14,7 @@ data = {
 # r = requests.get('https://imgs.xkcd.com/comics/python.png')
 # r = requests.get('https://httpbin.org/get',params=payload)
 # r = requests.post('https://httpbin.org/post',data=data)
-r = requests.get('https://httpbin.org/basic-auth/Prerit/Pkjain@1234',auth=('Prerit','Pkjain@1234'))
+r = requests.get('https://httpbin.org/basic-auth/Prerit/Pkjain@1234', auth=('Prerit', 'Pkjain@1234'))
 
 # print(dir(r))
 # print(help(r))
