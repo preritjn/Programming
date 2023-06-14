@@ -47,4 +47,4 @@ print(new_list1)
 
 # empty list
 empty_list = []
-empty_list = list()
+empty_list1 = list()
