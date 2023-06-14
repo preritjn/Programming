@@ -1,4 +1,4 @@
-import uuid
+import loc_uuid
 
 myuuid = uuid.uuid4()
 
