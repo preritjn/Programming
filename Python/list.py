@@ -1,4 +1,11 @@
+import copy
+
 lists = [1, 9, 57, 54, 25, 2, 34, 4]
+# id of the copied list is passed to the variable to which it is assigned
+new_list = lists
+# to copy the data of list to other variable without passing the id
+new_lists = copy.copy(lists)
+# new_list = lists[:]
 
 print(lists)
 lists.sort()
