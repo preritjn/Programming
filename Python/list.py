@@ -6,6 +6,8 @@ new_list1 = lists
 # to copy the data of list to other variable without passing the id
 new_list2 = copy.copy(lists)
 # new_list2 = lists[:]
+# deepcopy copies all the data no matter the nesting of loop
+# new_list3 = copy.deepcopy(lists)
 
 print(lists)
 lists.sort()
