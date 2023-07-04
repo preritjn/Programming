@@ -1,7 +1,7 @@
 import boto3
 
 client = boto3.client('s3')
-bucketName = 'prerit3010'
+bucketName = 'newbucketaws30'
 client.create_bucket(
     Bucket=bucketName,
     CreateBucketConfiguration={
