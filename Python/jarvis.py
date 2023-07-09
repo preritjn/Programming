@@ -43,7 +43,7 @@ def takeCommand():
         audio = r.record(source)
 
     # try:
-        print("Recognizing...")    
+        print("Recognizing...")
         query = r.recognize_google(audio, language='en-in')
         print(f"User said: {query}\n")
 
