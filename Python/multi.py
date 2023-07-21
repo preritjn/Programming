@@ -1,6 +1,4 @@
 import threading
-import time
-
 
 def functionA():
 	print("Function A")
@@ -30,4 +28,3 @@ def main():
 
 while True:
 	main()
-	time.sleep(1)

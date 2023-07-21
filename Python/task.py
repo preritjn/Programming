@@ -5,7 +5,7 @@ import pywhatkit
 # pywhatkit.sendwhatmsg("+917665127830", "Hello bhaiya", 11, 29)
 
 pywhatkit.sendwhatmsg_instantly(
-phone_no="+917509572760", 
+phone_no="+917978069543", 
 message="Howdy! This message will be sent instantly!",
 )
 
