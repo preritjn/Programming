@@ -7,7 +7,7 @@ int main() {
     cin>>n;
 	int processes[n],burst_time[n];
     for(int i=0;i<n;i++) 
-        cin>>processes[i]>>burst_time[i];
+        cin>>burst_time[i];
 	int wt[n], tat[n], total_wt = 0, total_tat = 0;
 	wt[0] = 0;
 	for (int i = 1; i < n ; i++ )
