@@ -3,8 +3,8 @@ using namespace std;
 
 void sub_sequence(vector<int> v, int i, vector<int> &ans) {
     if(i==v.size()) {
-        for(auto x:ans) {
-            cout<<x<<" ";
+        for(auto val : ans) {
+            cout<<val<<" ";
         }
         cout<<endl;
         return;
