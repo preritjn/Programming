@@ -1,5 +1,6 @@
 import uuid
 
-myuuid = uuid.uuid4()
+myuuid = [uuid.uuid4() for _ in range(100)]
 
-print('Your UUID is: ' + str(myuuid))
+for val in myuuid :
+    print(val)
